@@ -5,16 +5,7 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 import { FormHandles } from '@unform/core';
-
-
-type foodType = {
-  id: number,
-  name: string,
-  description: string,
-  price: number,
-  available: boolean,
-  image: string
-}
+import foodType from '../../types/foodType'
 
 interface ModalAddFoodProps {
   handleAddFood(food: foodType): void,
